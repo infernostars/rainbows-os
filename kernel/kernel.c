@@ -28,7 +28,7 @@ void _start(void) {
     // We should now be able to call the Limine terminal to print out
     // a simple "Hello World" to screen.
     struct limine_terminal *terminal = terminal_request.response->terminals[0];
-    terminal_request.response->write(terminal, "Welcome to \x1b[38;2;200;53;0mR\x1b[38;2;107;149;0ma\x1b[38;2;10;243;0mi\x1b[38;2;0;173;81mn\x1b[38;2;0;81;172mb\x1b[38;2;10;1;242mo\x1b[38;106;0;149;0mw\x1b[38;2;201;1;53ms\x1b[0m [version 0]", 162);
+    terminal_request.response->write(terminal, "Welcome to \x1b[38;2;200;53;0mR\x1b[38;2;107;149;0ma\x1b[38;2;10;243;0mi\x1b[38;2;0;173;81mn\x1b[38;2;0;81;172mb\x1b[38;2;10;1;242mo\x1b[38;2;106;0;149;0mw\x1b[38;2;201;1;53ms\x1b[0m [version 0]", 168);
 
     // We're done, just hang...
     done();
