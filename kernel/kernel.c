@@ -17,6 +17,9 @@ static void done(void) {
     }
 }
 
+void gdt_init(uint8_t* buffer); // from gdtc.c
+uint8_t gdt_buffer[256]; // for gdt
+
 // The following will be our kernel's entry point.
 void _start(void) {
     // Ensure we got a terminal
@@ -26,10 +29,12 @@ void _start(void) {
     }
 
     // We should now be able to call the Limine terminal to print out
-    // a simple "Hello World" to screen.
+    // a simple "Hello Wrld" to screen.
     struct limine_terminal *terminal = terminal_request.response->terminals[0];
     terminal_request.response->write(terminal, "\x1b[38;2;255;255;255mWelcome to \x1b[38;2;200;53;0mR\x1b[38;2;107;149;0ma\x1b[38;2;10;243;0mi\x1b[38;2;0;173;81mn\x1b[38;2;0;81;172mb\x1b[38;2;10;1;242mo\x1b[38;2;106;0;149mw\x1b[38;2;201;1;53ms\x1b[38;2;255;255;255m [version 0]\n>", 202);
-
+    __asm__("cli"); // disable interrupts, start getting ready for gdt
+    for (int i = 0; i<256; i++) gdt_buffer[i] = 0;
+    gdt_init(gdt_buffer);
     // We're done, just hang...
     done();
 }
