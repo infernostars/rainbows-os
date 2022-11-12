@@ -8,7 +8,13 @@ isr_stub_%+%1:
     call exception_handler
     iretq
 %endmacro
+%macro isr_call_clock 1
+isr_stub_%+%1:
+    call clock_function
+    iretq
+%endmacro
 extern exception_handler
+extern clock_function
 isr_no_err_stub 0
 isr_no_err_stub 1
 isr_no_err_stub 2
@@ -17,8 +23,8 @@ isr_no_err_stub 4
 isr_no_err_stub 5
 isr_no_err_stub 6
 isr_no_err_stub 7
-isr_err_stub    8
-isr_no_err_stub 9
+isr_call_clock  8
+isr_call_clock  9
 isr_err_stub    10
 isr_err_stub    11
 isr_err_stub    12

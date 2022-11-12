@@ -14,6 +14,7 @@ void idt_set_descriptor(uint8_t vector, uintptr_t isr, uint8_t flags, uint8_t is
     descriptor->isr_high = (isr >> 32) & 0xFFFFFFFF;
     descriptor->reserved = 0;
 }
+
 void idt_init() {
     idtr.base = (uintptr_t)&idt[0];
     idtr.limit = (uint16_t)sizeof(idt_desc_t) * IDT_MAX_DESCRIPTORS - 1;
@@ -26,6 +27,7 @@ void idt_init() {
     __asm__ volatile("sti");                        // set the interrupt flag
 
 }
+
 void exception_handler() {
      __asm__ volatile ("cli; hlt"); // Completely hangs the computer
 }
