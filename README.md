@@ -40,7 +40,7 @@ Click on Add. Insert your Rainbows .iso file.
 Now, click Start at the top.
 
 You're done. 
-If you encur errors, ask Infernostars for help.
+If you encur errors, ask infernostars or arenexu for help.
 
 ## Current functionality
 * Currently, Rainbows only has a bootup message. 
