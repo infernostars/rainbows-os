@@ -1,13 +1,13 @@
-#Rainbows
-##Version 0001
+# Rainbows
+## Version 0001
 Welcome to Rainbows. Rainbows is a Work in Progress. It will not run as described. This is only the planned functionality.
 
-##Planned functionality
+## Planned functionality
 Rainbows is a mix of command line and GUI. 
 Commands operate in the command line, and programs can be executed in in the command line, then command line is hidden and program can be used. 
 Exiting the program is also possible with a selected keybind.
 
-##How to use
+## How to use
 To use Rainbows, you need to flash a storage medium, such as an USB stick or CD drive, and then insert it into your computer.
 Then, restart your computer.
 Before your previous operating system starts booting up, press the key that opens the boot-device selection menu for you, such as Esc, F10 or F12.
@@ -16,7 +16,7 @@ The subsequent reboot should detect operating system.
 When limine bootloader pops up, just press enter.
 Rainbows is ready to use now.
 
-##How to install on a virtual machine (for beginners)
+## How to install on a virtual machine (for beginners)
 * VirtualBox
 To install Rainbows on VirtualBox, create a new machine by clicking New at the top.
 Name your machine whatever you want.
@@ -42,8 +42,8 @@ Now, click Start at the top.
 You're done. 
 If you encur errors, ask Infernostars for help.
 
-##Current functionality
+## Current functionality
 * Currently, Rainbows only has a bootup message. 
 
-##(Future) Commands
+## (Future) Commands
 * `/help` shows all available commands and programs
