@@ -46,7 +46,11 @@ isr_no_err_stub 27
 isr_no_err_stub 28
 isr_no_err_stub 29
 isr_err_stub    30
-isr_no_err_stub 31
+%assign i 31
+%rep 225
+isr_no_err_stub i
+%assign i i+1
+%endrep
 global isr_stub_table
 isr_stub_table:
 %assign i 0 
