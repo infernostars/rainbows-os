@@ -11,7 +11,7 @@ It is also recommended to cross reference the contents of this repository with [
 You may be asking yourself: "what now?".  So here's a list of things you may want to do to get started working
 on your new kernel:
 
-* Load an [IDT](https://wiki.osdev.org/Interrupt_Descriptor_Table) so that exceptions and interrupts can be handled.
+* Load an [IDT](https://wiki.osdev.org/Interrupt_Descriptor_Table) so that exceptions and interrupts can be handled. - in progress 11/12/22
 * Write a physical memory allocator, a good starting point is a bitmap allocator.
 * Write a virtual memory manager that can map, remap and unmap pages.
 * Begin parsing ACPI tables, the most important one is the MADT since it contains information about the APIC.
