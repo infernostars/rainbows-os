@@ -6,7 +6,7 @@ Rainbows is a command line interface.
 Commands can hide the command line and take the entire terminal if needed, but a keybind [that hasn't been thought of yet] will close it.
 
 ## Minimum Requirements
-x86_64 (or amd64, whatever you want to call it) systems are supported.
+x86_64/amd64 systems are supported.
 4MB of RAM is recommended.
 
 ## How to use
@@ -22,7 +22,7 @@ We currently view a setup program as unnecessary.
 
 ## How to install on a virtual machine
 We recommend QEMU for virtualizing Rainbows. We will be explaining how to virtualize Rainbows in QEMU in the near future.
-###VirtualBox
+### VirtualBox
 To install Rainbows on VirtualBox, create a new machine by clicking New at the top.
 Name your machine whatever you want.
 Set type to other and version Other/Unknown (64-bit).
