@@ -1,14 +1,12 @@
 # Rainbows
-## Version 0001
-Welcome to Rainbows. Rainbows is a Work in Progress. It will not run as described. This is only the planned functionality.
+Welcome to Rainbows. Rainbows is a work in progress operating system.
 
 ## Planned functionality
-Rainbows is a mix of command line and GUI. 
-Commands operate in the command line, and programs can be executed in in the command line, then command line is hidden and program can be used. 
-Exiting the program is also possible with a selected keybind.
+Rainbows is a command line interface.
+Commands can hide the command line and take the entire terminal if needed, but a keybind [that hasn't been thought of yet] will close it.
 
 ## Minimum Requirements
-x64 and x86_64 systems are supported.
+x86_64 (or amd64, whatever you want to call it) systems are supported.
 4MB of RAM is recommended.
 
 ## How to use
@@ -17,12 +15,12 @@ Then, restart your computer.
 Before your previous operating system starts booting up, press the key that opens the boot-device selection menu for you, such as Esc, F10 or F12.
 Select USB stick or CD drive as main boot device.
 The subsequent reboot should detect operating system.
-When limine bootloader pops up, just press enter.
-Rainbows is ready to use now.
+When limine bootloader pops up, press enter to select the operating system or wait 3 seconds.
+Rainbows should have loaded!
 
 We currently view a setup program as unnecessary.
 
-## How to install on a virtual machine (for beginners)
+## How to install on a virtual machine
 We recommend QEMU for virtualizing Rainbows. We will be explaining how to virtualize Rainbows in QEMU in the near future.
 ###VirtualBox
 To install Rainbows on VirtualBox, create a new machine by clicking New at the top.
@@ -47,7 +45,7 @@ Click on Add. Insert your Rainbows .iso file.
 Now, click Start at the top.
 
 You're done. 
-If you encur errors, ask infernostars or arenexu for help.
+If you encur errors during install, ask arenexu for help.
 
 ## Current functionality
 * Currently, Rainbows only has a bootup message. 
