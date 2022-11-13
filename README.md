@@ -7,6 +7,10 @@ Rainbows is a mix of command line and GUI.
 Commands operate in the command line, and programs can be executed in in the command line, then command line is hidden and program can be used. 
 Exiting the program is also possible with a selected keybind.
 
+## Minimum Requirements
+x64 and x86_64 systems are supported.
+4MB of RAM is recommended.
+
 ## How to use
 To use Rainbows, you need to flash a storage medium, such as an USB stick or CD drive, and then insert it into your computer.
 Then, restart your computer.
@@ -16,12 +20,14 @@ The subsequent reboot should detect operating system.
 When limine bootloader pops up, just press enter.
 Rainbows is ready to use now.
 
+We currently view a setup program as unnecessary.
+
 ## How to install on a virtual machine (for beginners)
-* VirtualBox
+###VirtualBox
 To install Rainbows on VirtualBox, create a new machine by clicking New at the top.
 Name your machine whatever you want.
 Set type to other and version Other/Unknown (64-bit).
-Any memory size should be sufficient for this current version of Rainbows.
+We recommend 4MB of RAM. This may and probably will change in later build versions.
 
 Then, click on Create a virtual hard disk now in the tab Hard Disk and click on Create.
 If you already have a virtual hard disk file that you want to use, click on Use an existing virtual hard disk file and select one.
@@ -47,3 +53,7 @@ If you encur errors, ask infernostars or arenexu for help.
 
 ## (Future) Commands
 * `/help` shows all available commands and programs
+
+## Precaution 
+We want to further clarify that we are not liable for *any* direct, indirect or consequential damages regarding loss of use, data or profits. 
+Rainbows is, so far, an *experimental* operating system. It is not meant for real use.
