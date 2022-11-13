@@ -23,6 +23,7 @@ Rainbows is ready to use now.
 We currently view a setup program as unnecessary.
 
 ## How to install on a virtual machine (for beginners)
+We recommend QEMU for virtualizing Rainbows. We will be explaining how to virtualize Rainbows in QEMU in the near future.
 ###VirtualBox
 To install Rainbows on VirtualBox, create a new machine by clicking New at the top.
 Name your machine whatever you want.
