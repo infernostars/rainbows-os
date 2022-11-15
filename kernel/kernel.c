@@ -42,6 +42,6 @@ void _start(void) {
     struct limine_terminal *terminal = terminal_request.response->terminals[0];
     terminal_request.response->write(terminal, "\x1b[38;2;255;255;255mWelcome to \x1b[38;2;200;53;0mR\x1b[38;2;107;149;0ma\x1b[38;2;10;243;0mi\x1b[38;2;0;173;81mn\x1b[38;2;0;81;172mb\x1b[38;2;10;1;242mo\x1b[38;2;106;0;149mw\x1b[38;2;201;1;53ms\x1b[38;2;255;255;255m [version 0]\n>", 202);
     idt_init();
-    PIC_remap(0x21, 0x29);
+    PIC_remap(0x20, 0x30);
     done();
 }
