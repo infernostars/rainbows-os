@@ -18,7 +18,7 @@ The subsequent reboot should detect operating system.
 When limine bootloader pops up, press enter to select the operating system or wait 3 seconds.
 Rainbows should have loaded!
 
-We currently view a setup program as unnecessary.
+We currently view a setup program as unnecessary. And by unnecessary we mean unmade, because it's not done yet.
 
 ## How to install on a virtual machine
 We recommend QEMU for virtualizing Rainbows. We will be explaining how to virtualize Rainbows in QEMU in the near future.
