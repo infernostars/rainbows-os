@@ -24,7 +24,6 @@ void idt_init() {
         vectors[vector] = true;
     }
     __asm__ volatile("lidt %0" : : "memory"(idtr)); // load the new IDT
-    __asm__ volatile("sti");                        // set the interrupt flag
 
 }
 
